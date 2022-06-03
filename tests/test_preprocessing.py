@@ -2,7 +2,7 @@ import ast
 import unittest
 from unittest import mock
 import os
-from ..preprocess import clean, remove_stopwords, tokenize,generate_bigrams
+from preprocess import clean, remove_stopwords, tokenize,generate_bigrams
 from .mock_data import mock_open, mock_to_csv
 
 
