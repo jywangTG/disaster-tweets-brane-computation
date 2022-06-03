@@ -70,7 +70,8 @@ jobs:
           git clone https://github.com/epi-project/brane.git 
           cd brane && chmod a+x make.sh && mkdir -p ./target/release/
           ./make.sh cli --precompiled 
+          pwd
       - name: Build Brane Computation
         working-directory: ./
         run: 
-          /home/runner/work/disaster-tweets-brane/disaster-tweets-brane/brane/target/release/brane build container.yml
+          /home/runner/work/disaster-tweets-brane-computation/disaster-tweets-brane-computation/brane/target/release/brane build container.yml
